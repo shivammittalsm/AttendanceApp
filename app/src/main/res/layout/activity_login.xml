@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userlogin"
+        android:text="Welcome To STAR"
+        android:textColor="@color/white"
+        android:typeface="serif"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/myanimationview"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:lottie_autoPlay="true"
+        android:layout_below="@+id/userlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:lottie_fileName="login.json"
+        app:lottie_loop="true"
+        app:lottie_speed="0.7" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myanimationview"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:autofillHints="nothing"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/editborder"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Enter Email ID"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/loginpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editborder"
+            android:textColorHint="@color/white"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/pb"
+            />
+
+
+        <TextView
+            android:id="@+id/forgetpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="Forgot Password?"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <Button
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custombutton"
+            android:onClick="login"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:typeface="serif" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:onClick="signin"
+            android:layout_gravity="center"
+            android:text="Create a new account"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

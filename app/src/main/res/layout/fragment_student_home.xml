@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:background="@drawable/backgrounddesign"
+    android:layout_height="match_parent"
+    tools:context=".studentsection.profile.ProfileFragment">
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pname"
+        android:drawableLeft="@drawable/name"
+        android:editable="false"
+        android:padding="14dp"
+        android:hint="   @NAME"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="130dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profileicon"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="    ABC College Of Engineering Roorkee"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/collegeicon"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:text="Email ID"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pemail"
+            android:padding="15dp"
+            android:hint="  @Email Id"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:editable="false"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="12dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:text="Mobile Number"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:editable="false"
+            android:id="@+id/pmobiile"
+            android:hint="  @Mobile"
+            android:drawableLeft="@drawable/mobile"
+            android:drawablePadding="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:text="College ID"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/pid"
+            android:hint="  @College ID"
+            android:drawableLeft="@drawable/idicon"
+            android:drawablePadding="12dp"
+            android:editable="false"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/pbar"/>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/custombutton"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="70dp"
+            android:text="Update"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

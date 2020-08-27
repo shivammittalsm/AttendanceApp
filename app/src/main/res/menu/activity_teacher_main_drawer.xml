@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_thome"
+            android:icon="@drawable/ic_baseline_account_box_24"
+            android:title="@string/menu_thome" />
+        <item
+            android:id="@+id/nav_tprofile"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_tprofile" />
+
+        <item
+            android:id="@+id/nav_tattendance"
+            android:icon="@drawable/ic_baseline_spellcheck_24"
+            android:title="@string/menu_tattendance" />
+
+        <item
+            android:id="@+id/nav_tstudent"
+            android:icon="@drawable/ic_baseline_spellcheck_24"
+            android:title="@string/menu_tstudents" />
+
+        <item
+            android:id="@+id/nav_treport"
+            android:icon="@drawable/report"
+            android:title="@string/menu_treport" />
+
+        <item
+            android:id="@+id/nav_tlogout"
+            android:icon="@drawable/ic_baseline_keyboard_backspace_24"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

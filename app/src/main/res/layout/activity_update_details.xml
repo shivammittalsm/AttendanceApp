@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign"
+    android:orientation="vertical"
+    tools:context=".studentsection.updateDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Your Profile Here"
+        android:textSize="23sp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="110dp"
+        android:src="@drawable/profileicon"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="ABC College Of Engineering Roorkee"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/collegeicon"
+        android:drawablePadding="13dp"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/uname"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="13dp"
+        android:padding="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:id="@+id/uemail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="13dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:id="@+id/umobiile"
+        android:drawableLeft="@drawable/mobile"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="13dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/uid"
+        android:drawableLeft="@drawable/idicon"
+        android:drawablePadding="13dp"
+        android:editable="false"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/upass"
+        android:drawableLeft="@drawable/passwordicon"
+        android:drawablePadding="13dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/pb"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/custombutton"
+            android:onClick="updateDetails"
+            android:text="Update Profile"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

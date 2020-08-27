@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.attendanceapp.studentsection.profile.ProfileFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_student_home" />
+
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.example.attendanceapp.studentsection.attendance.AttendanceFragment"
+        android:label="@string/menu_attendance"
+        tools:layout="@layout/fragment_student_attendance" />
+
+    <fragment
+        android:id="@+id/nav_faculty"
+        android:name="com.example.attendanceapp.studentsection.Faculty.FacultyFragment"
+        android:label="@string/menu_faculty"
+        tools:layout="@layout/fragment_student_faculty" />
+
+    <fragment
+        android:id="@+id/nav_rules"
+        android:name="com.example.attendanceapp.studentsection.rule.RuleFragment"
+        android:label="@string/menu_rules"
+        tools:layout="@layout/fragment_student_rule" />
+</navigation>
